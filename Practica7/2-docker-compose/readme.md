@@ -17,11 +17,11 @@ El archivo compose.yaml permitirá configurar dos servicios de acuerdo con el si
 ### Revise el archivo archivo compose.yaml y complete solamente las partes que solicita <valor>, estas partes corresponden a
 - Las variables de entorno para cada uno de los servicios
 - Mapeo de puertos para wordpress 
-- **La dependencia entre el servicio de wordpress y la base de datos, se indica en la línea 44**
+- **La dependencia entre el servicio de wordpress y la base de datos, se indica en las líneas 44-46**
   - depends_on: Establece dependencias entre servicios. El servicio actual **wordpress-service** depende del servicio **mysql-service**.
   - condition: service_healthy significa que el servicio actual solo se iniciará después de que el servicio mysql-service esté en un estado saludable, es decir, después de que pase su healthcheck.
 - Healthcheck de cada uno de los servicios.
-- Se requiere que Wordpress se encuentre disponible en todo momento, defina una política de reinicio adecuada para esto (línea 44)
+- Se requiere que Wordpress se encuentre disponible en todo momento, defina una política de reinicio adecuada para esto (línea 43)
 
 ### Ejecutar Docker compose
 Este comando descargará las imágenes necesarias, creará y ejecutará los contenedores según lo definido en el archivo compose.yaml

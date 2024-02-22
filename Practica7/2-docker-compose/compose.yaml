@@ -43,7 +43,7 @@ services:
     restart: <valor>
     depends_on:
       mysql-service:
-        condition: service_healthy
+        condition: <valor>
 
 volumes:
   mysql-vol:
