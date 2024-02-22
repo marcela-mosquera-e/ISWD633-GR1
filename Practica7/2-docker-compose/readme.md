@@ -8,7 +8,7 @@ Docker Compose permite definir la configuración de todos los servicios de una a
 ## Ejercicio
 El archivo compose.yaml permitirá configurar dos servicios de acuerdo con el siguiente esquema:
 
-![Escenaio docker compose](escenario-docker compose.png)
+![Escenario docker compose](escenario-docker-compose.png)
 
 **Completar el archivo compose.yaml, solamente en las partes que solicta <valor>**
 
