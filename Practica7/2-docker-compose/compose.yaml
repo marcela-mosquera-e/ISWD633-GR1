@@ -10,36 +10,36 @@ services:
       MYSQL_USER: <valor>
       MYSQL_PASSWORD: <valor>
     volumes:
-      - mysql-vol:nh
+      - mysql-vol:/var/lib/mysql
     networks:
       - net-wp
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 10s
-      retries: 10
-      start_period: 10s
+      interval: <valor>
+      timeout: <valor>
+      retries: <valor>
+      start_period: <valor>
 
   wordpress-service:
     image: wordpress:6
-    container_name: wordpress-container
+    container_name: wordpress-
     ports:
-      - 8080:80
+      - <valor>:<valor>
     environment:
       WORDPRESS_DB_HOST: mysql-service
       WORDPRESS_DB_USER: <valor>
       WORDPRESS_DB_PASSWORD: <valor>
       WORDPRESS_DB_NAME: <valor>
     volumes:
-      - wordpress-vol:<valor>
+      - wordpress-vol:/var/www/html
     networks:
       - net-wp
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost"]
-      interval: 10s
-      timeout: 10s
-      retries: 5
-      start_period: 5s
+      interval: <valor>
+      timeout: <valor>
+      retries: <valor>
+      start_period: <valor>
     restart: <valor>
     depends_on:
       mysql-service:
