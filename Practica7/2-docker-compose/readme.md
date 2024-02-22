@@ -1,12 +1,14 @@
 ## Docker Compose
 
 Docker Compose permite definir la configuración de todos los servicios de una aplicación en un solo archivo **compose.yaml**.
-Cada servicio se ejecuta en su propio contenedor. 
-Facilita la gestión y el mantenimiento de la configuración, en comparación con la gestión de múltiples archivos de configuración de Docker o scripts de shell. 
-Ayuda a tener consistencia en los entornos de desarrollo, pruebas y producción.
+- Cada servicio se ejecuta en su propio contenedor. 
+- Facilita la gestión y el mantenimiento de la configuración, en comparación con la gestión de múltiples archivos de configuración de Docker o scripts de shell. 
+- Ayuda a tener consistencia en los entornos de desarrollo, pruebas y producción.
 
+## Ejercicio
+El archivo compose.yaml permitirá configurar dos servicios de acuerdo con el siguiente esquema:
 
-
+![Escenaio docker compose](escenario-docker compose.png)
 
 **Completar el archivo compose.yaml, solamente en las partes que solicta <valor>**
 
